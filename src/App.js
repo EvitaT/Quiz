@@ -7,6 +7,8 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NotFound from "./components/pages/NotFound";
+import EditTour from "./components/tours/EditTour";
+import Tour from "./components/tours/Tour";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/tours/edit/:id" component={EditTour} />
+          <Route exact path="/tours/:id" component={Tour} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

@@ -1,0 +1,40 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "On holidays in royal Grodno",
+      "route": "Grodno - Lida - Grodno - Korobchicy",
+      "date": "13.06.2021 - 17.06.2021",
+      "price": "70 BYN"
+    },
+    {
+      "id": 2,
+      "title": "Literary Orsha region",
+      "route": "Minsk - Orsha - Levki - Minsk",
+      "date": "19.06.2021 - 21.06.2021",
+      "price": "80 BYN"
+    },
+    {
+      "id": 3,
+      "title": "Temples of Minsk",
+      "route": "Minsk",
+      "date": "26.06.2021 - 26.06.2021",
+      "price": "80 BYN"
+    },
+    {
+      "id": 4,
+      "title": "Berezinsky biosphere reserve",
+      "route": "Minsk - Domzhericy - Minsk",
+      "date": "24.07.2021 - 27.07.2021",
+      "price": "80 BYN"
+    },
+    {
+      "id": 5,
+      "title": "Ancient Zaslavl",
+      "route": "Minsk - Zaslavl - Minsk",
+      "date": "31.07.2021 - 02.08.2021",
+      "price": "85 BYN",
+      "": "Ancient Zaslavll"
+    }
+  ]
+}

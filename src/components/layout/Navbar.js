@@ -19,7 +19,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <Link className="btn btn-outline-light" to="/tours/add">Profile</Link>
+                <Link className="btn btn-outline-light">Profile</Link>
             </div>
         </nav>
     );
