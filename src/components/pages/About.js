@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className ="container">
             <div className="py-4">
-                <h1>About Page</h1>
+                <h1>About us</h1>
                 <p className="lead">
                 Travel makes us happy! Seeing new things, and old, meeting new people and learning more about the world through local eyes is our passion.
                 </p>

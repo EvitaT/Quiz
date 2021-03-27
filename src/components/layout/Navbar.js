@@ -17,12 +17,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" exact to="/about">About</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" exact to="/contact">Contact</NavLink>
-                        </li>
                     </ul>
                 </div>
-                <Link className="btn btn-outline-light" to="/tours/add">Add Tour</Link>
+                <Link className="btn btn-outline-light" to="/tours/add">Profile</Link>
             </div>
         </nav>
     );

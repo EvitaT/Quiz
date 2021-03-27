@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-    const [tours, setTour] = useState([]);
     return (
         <div className ="container">
             <div className="py-4">
-                <h1>Home Page</h1>
+                <h1>Available tours</h1>
                 <table class="table border shadow">
                     <thead class="table-dark">
                         <tr>

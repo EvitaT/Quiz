@@ -2,11 +2,14 @@ import React from "react";
 
 const Footer = () => {
     return(
-        <div className="bg-light text-center text-lg-start">
-            <footer class="footer">
-                &copy; {new Date().getFullYear()} TOURS - All Rights Reserved
-            </footer>
-        </div>
+        <footer class="footer bg-light">
+            <div class="container ">
+                <div class="row row-cols-auto">
+                    <div class="col">&copy; {new Date().getFullYear()} TOURS - All Rights Reserved</div>
+                    <div class="col text-right">CONTACT INFO: +375291234567 Tours@info.com</div>
+                </div>
+            </div>
+        </footer>
     );
 }
 
