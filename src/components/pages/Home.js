@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Search from "../layout/Search";
+import Pagination from "../layout/Pagination";
 
 const Home = () => {
     const [tours, setTour] = useState([]);
@@ -20,8 +22,10 @@ const Home = () => {
             <div className="py-4">
                 <h1>Available Tours</h1>
                 <hr />
-                <table class="table border shadow">
-                    <thead class="table-dark">
+                <Search />
+                <br />
+                <table className="table border shadow">
+                    <thead className="table-dark">
                         <tr>
                             <th scope="col">№</th>
                             <th scope="col">Title</th>
@@ -33,32 +37,24 @@ const Home = () => {
                     </thead>
                     <tbody>
                        {
-                            tours.map((tour, index) => (
-                                <tr>
+                            tours.map((tour, index) => {
+                                return <tr key={index}>
                                         <th scope="row">{index + 1}</th>
                                         <td>{tour.title}</td>
                                         <td>{tour.route}</td>
                                         <td>{tour.date}</td>
                                         <td>{tour.price}</td>
                                         <td>
-                                            <Link class="btn btn-primary mr-2" to={`/tours/${tour.id}`}>View</Link>
-                                            <Link class="btn btn-outline-dark mr-2" to={`/tours/edit/${tour.id}`}>Edit</Link>
-                                            <Link class="btn btn-danger" onClick={() => deleteTour(tour.id)}>Delete</Link>
+                                            <Link className="btn btn-primary mr-2" to={`/tours/${tour.id}`}>View</Link>
+                                            <Link className="btn btn-outline-dark mr-2" to={`/tours/edit/${tour.id}`}>Edit</Link>
+                                            <a className="btn btn-danger" onClick={() => deleteTour(tour.id)}>Delete</a>
                                         </td>
                                 </tr>
-                            ))
+                            })
                        }
                     </tbody>
                 </table>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                </nav>
+                <Pagination />
             </div>
         </div>
     );
